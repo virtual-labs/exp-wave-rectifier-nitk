@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .simulation {
+    width: 800px;
+    height: 600px;
+    border: 1px solid black;
+  }
+  .simulation .topic {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+  }
+  .subtopics {
+    width: 100%-20px;
+    margin-left: 20px;
+    line-height: 35px;
+  }
+  .subtopics ol li {
+    margin-left: 40px;
+  }
+  .subtopics p {
+    margin-left: 20px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px;
+  }
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    place-items: center;
+  }.img1 {
+    height: 100px;
+    width: 150px;
+    margin: 20px auto;
+  }
+  .img2 {
+    height: 100px;
+    width: 150px;
+    margin: 20px auto;
+  }
+  .img3 {
+    height: 100px;
+    width: 150px;
+    margin: 20px auto;
+  }
+  .img4 {
+    height: 100px;
+    width: 150px;
+    margin: 20px auto;
+  }
+  #buttonup {
+    border: 0;
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+    background-color: white;
+    position: relative;
+  }
+  #buttondown {
+    border: 0;
+    cursor: pointer;
+    float: left;
+    margin-left: 20px;
+    background-color: white;
+    transform: scaleX(-1);
+    display: none;
+  } 
+  .nextimg {
+    position:absolute;
+    width: 45px;
+    height: 45px;
+    top:-60px;
+    left:-35px;
+  }
+  #content {
+
+    width: 800px;
+    height: 500px;
+  }
+  .blocker {
+    display: none;
+    position: absolute;
+    height: 550px;
+    width: 800px;
+    z-index: 6;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+.simoptions{
+    position:relative;
+    background-color: rgba(135, 207, 235, 0.621);
+    width: 25%; 
+    height: 550px;
+    float: left;
+    filter: blur(0px);
+    top: auto;
+   
+  }
+  .procedure {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+#content2 {
+  
+    width: 800px;
+    height: 500px;
+  }
+ 
+  #exp {
+    height: 35px;
+    width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(65, 62, 62, 0.219);
+    cursor: pointer;
+  }
+#Halfwave {
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left:100px;
+
+  } 
+  #Fullwave {
+    width: 400px;
+    height: 400px;
+    margin-top: 30px;
+    margin-left:100px;
+  }  
+  
+  #halfwithdso {
+    width: 600px;
+    height: 500px;
+    margin-top: 30px;
+    /* margin-left:100px; */
+    
+  }  
+  #halfdso {
+    width: 870px;
+    height: 650px;
+    margin-left: -100px;
+    margin-top: -150px;
+    position: relative;
+}
+#halfdso1 {
+  width: 800px;
+  height: 650px;
+  margin-left: -80px;
+  margin-top:-130px;
+  position: relative;
+}
+#inputw{
+  /* display: inline-block; */
+  width:300px ;
+  height: 120px;
+  margin-left: 10px;
+  margin-top: -452px;
+  position:absolute;
+}
+#outputh{
+  /* display: inline-block; */
+  width:300px ;
+  height: 120px;
+  margin-left: 10px;
+  margin-top: -452px;
+  position:absolute;
+}
+#outputf{
+  /* display: inline-block; */
+  width:300px ;
+  height: 120px;
+  margin-left: 10px;
+  margin-top: -452px;
+  position:absolute;
+}
+  
+  #fullwithdso {
+    width: 600px;
+    height: 450px;
+    margin-top: 30px;
+    /* margin-left:100px; */
+  }  
+  
+  
+.SLIDERS {
+    margin: 10px;
+  }
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: black;
+    outline: none;
+    opacity: 0.5;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid red;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+  }
+  
+  .slider::-webkit-slider-thumb:hover {
+    width: 20px;
+    height: 20px;
+  }
+  .result {
+    margin: 10px;
+    text-align: left;
+  }
+  .Result {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+     /* width: 120px;
+    height: 30px; */
+    border-radius: 20px;
+    cursor: pointer;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+  }
+  
+ 
+  .transformerdiv{
+    margin: 10px;
+  }
+  #transformers{
+    height: 35px;
+    width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(65, 62, 62, 0.219);
+    cursor: pointer;
+  }
+
+  /* Simulation Box */
+  
+  .mainsimulation {
+    width: 75%;
+    height: 500px;
+    float: right;
+    text-align: center;
+  }
+  .addbutton {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+  
+  #addbutton {
+  position: absolute; 
+   /* width: 120px;
+    height: 30px; */
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: 20px;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+  }
+  #addbutton1 {
+    position: absolute; 
+     /* width: 120px;
+      height: 30px; */
+      border-radius: 30px;
+      cursor: pointer;
+      margin-left: 20px;
+      padding-left: 8px;
+      padding-top: 4px;
+      padding-right: 8px;
+      padding-bottom: 4px;
+    }
+    #addbutton2 {
+        position: absolute; 
+         /* width: 120px;
+          height: 30px; */
+          border-radius: 30px;
+          cursor: pointer;
+          margin-left: 20px;
+          padding-left: 8px;
+          padding-top: 4px;
+          padding-right: 8px;
+          padding-bottom: 4px;
+        }
+  #instructions {
+    display: none;
+    height: 400px;
+    width: 700px;
+    position: absolute;
+    background-color: white;
+    top: 110px;
+    left: 45px;
+    border: black solid;
+    border-width: 3px;
+    z-index: 7;
+  }
+  
+  .icontent {
+    margin-left: 35px;
+    line-height: 1.63rem;
+  }
+  
+  #instructions button {
+    width: 60px;
+    height: 31px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  #calculate {
+    display: none;
+    height: 400px;
+    width: 700px;
+    position: absolute;
+    background-color: white;
+    top: 110px;
+    left: 45px;
+    border: black solid;
+    border-width: 3px;
+    z-index: 7;
+  }
+  
+  .icalculate1 {
+    margin-left: 35px;
+    line-height: 1.63rem;
+  }
+  .inputgraph1 {
+    margin-left: 35px;
+    line-height: 1.63rem;
+  }
+  .outputgraph1half {
+    margin-left: 35px;
+    line-height: 1.63rem;
+  }
+ .outputgraph1full {
+    margin-left: 35px;
+    line-height: 1.63rem;
+  }
+  #calculate1 {
+    display: none;
+    height: 400px;
+    width: 700px;
+    position:absolute ;
+    background-color: white;
+    top: 110px;
+    left: 45px;
+    border: black solid;
+    border-width: 3px;
+    z-index: 7;
+  }
+  #outputgraphhalf {
+    display: none;
+    height: 450px;
+    width: 750px;
+    position:absolute ;
+    background-color: white;
+    top: 110px;
+    left: 25px;
+    border: black solid;
+    border-width: 3px;
+    z-index: 7;
+  }
+ #outputgraphfull {
+    display: none;
+    height: 450px;
+    width: 750px;
+    position:absolute ;
+    background-color: white;
+    top: 110px;
+    left: 25px;
+    border: black solid;
+    border-width: 3px;
+    z-index: 7;
+  }
+ #inputgraph {
+    display: none;
+    height: 450px;
+    width: 750px;
+    position:absolute ;
+    background-color: white;
+    top: 110px;
+    left: 25px;
+    border: black solid;
+    border-width: 3px;
+    z-index: 7;
+  }
+  
+  .icalculate {
+    margin-left: 35px;
+    line-height: 1.63rem;
+  }
+  
+  #calculate button {
+    /* width: 60px;
+    height: 31px; */
+    border-radius: 20px;
+    cursor: pointer;
+    position: inherit;
+    margin-left: 20px;
+      padding-left: 8px;
+      padding-top: 4px;
+      padding-right: 8px;
+      padding-bottom: 4px;
+    bottom: 0;
+    right: 0;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  #calbutton {
+    position: inherit; 
+     /* width: 120px;
+      height: 30px; */
+      border-radius: 30px;
+      cursor: pointer;
+      margin-left: 20px;
+      padding-left: 8px;
+      padding-top: 4px;
+      padding-right: 8px;
+      padding-bottom: 4px;
+      
+    }
+    #atm{
+      margin-top: -20px;
+      position: inherit; 
+     /* width: 120px;
+      height: 30px; */
+      border-radius: 30px;
+      cursor: pointer;
+      
+      margin-left: 600px;
+      padding-left: 8px;
+      padding-top: 4px;
+      padding-right: 8px;
+      padding-bottom: 4px;
+    }
+    #closean
+    {
+      margin-top: -8px;
+      position: inherit; 
+     /* width: 120px;
+      height: 30px; close button for input waveform*/
+      border-radius: 30px;
+      cursor: pointer;
+      
+      margin-left: 200px;
+      padding-left: 8px;
+      padding-top: 4px;
+      padding-right: 8px;
+      padding-bottom: 4px;
+    }
+    
+    #atm1{
+      margin-top: -170px;
+      position: inherit; 
+     /* width: 120px;
+      height: 30px; close button for input waveform*/
+      border-radius: 30px;
+      cursor: pointer;
+      
+      margin-left: 680px;
+      padding-left: 8px;
+      padding-top: 4px;
+      padding-right: 8px;
+      padding-bottom: 4px;
+    }
+    #atm2{
+      margin-top: -150px;
+      position: inherit; 
+     /* width: 120px;
+      height: 30px;  close button for half wave output waveform*/
+      border-radius: 30px;
+      cursor: pointer;
+      
+      margin-left: 650px;
+      padding-left: 8px;
+      padding-top: 4px;
+      padding-right: 8px;
+      padding-bottom: 4px;
+    }
+#atm3{
+      margin-top: -150px;
+      position: inherit; 
+     /* width: 120px;
+      height: 30px; close button for full wave output waveform*/
+      border-radius: 30px;
+      cursor: pointer;
+      
+      margin-left: 680px;
+      padding-left: 8px;
+      padding-top: 4px;
+      padding-right: 8px;
+      padding-bottom: 4px;
+    }
+  .help {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 5px;
+  }
+  
+  .help button {
+    background-color: rgb(189, 231, 249);
+    border: 0;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .help img {
+    width: 25px;
+    height: 25px;
+  }
+ #connectbutton{
+    position: absolute; 
+    /* width: 120px;
+     height: 30px; */
+     border-radius: 30px;
+     cursor: pointer;
+     margin-left: -10px;
+     padding-left: 8px;
+     padding-top: 4px;
+     padding-right: 8px;
+     padding-bottom: 4px;
+ }
+
+
+  #vrmsAns,#vrmsAns1,#v2Ans,#v2Ans1,#vdcAns,#vdcAns1,#rfAns,#rfAns1{
+     color:rgb(102, 102, 209);
+  }
+ 
+
+
+ 
