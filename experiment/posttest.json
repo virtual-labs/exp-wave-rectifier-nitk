@@ -75,7 +75,7 @@
         "a": "V<sub>m</sub>/2",
         "b": "V<sub>m</sub>/π",
         "c": "V<sub>m</sub>/2π",
-        "d": "V<sub>m</sub>/π"
+        "d": "V<sub>m</sub>/4π"
       },
       "explanations": {
         "a": "",
