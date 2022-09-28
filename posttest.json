@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is the ripple factor of a full wave rectifier?",
+      "answers": {
+        "a": "1.21",
+        "b": "1",
+        "c": "0.48",
+        "d": "0.9"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "For a stepup transformer the number of turns in the primary and secondary is related by?",
+      "answers": {
+        "a": "N<sub>p</sub> = N<sub>s</sub>",
+        "b": "N<sub>p</sub> < N<sub>s</sub>",
+        "c": "N<sub>p</sub> > N<sub>s</sub>",
+        "d": "independent of the number of turns"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "V<sub>dc</sub> in a halfwave rectifier means?",
+      "answers": {
+        "a": "Average voltage for a period of T",
+        "b": "Rms voltage for a period of T",
+        "c": "Square of the maximum voltage",
+        "d": "Reverse bias voltage of the diode"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "The average output voltage, V<sub>dc</sub>  of a half wave rectifier is",
+      "answers": {
+        "a": "4V<sub>m</sub>/π",
+        "b": "2V<sub>m</sub>/π",
+        "c": "V<sub>m</sub>/2π",
+        "d": "V<sub>m</sub>/π"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+     "question": "RMS value of the output voltage, Vrms  of a Half-wave rectifier is",
+      "answers": {
+        "a": "V<sub>m</sub>/2",
+        "b": "V<sub>m</sub>/π",
+        "c": "V<sub>m</sub>/2π",
+        "d": "V<sub>m</sub>/4π"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    }
+  ]
+}
