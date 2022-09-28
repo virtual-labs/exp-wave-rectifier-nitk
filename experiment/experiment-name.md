@@ -1,1 +1,1 @@
-## Experiment name
+## Half/ Full wave Rectifier
