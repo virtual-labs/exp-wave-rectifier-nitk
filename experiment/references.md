@@ -1,4 +1,5 @@
 ### References
 
-1. Electronic Devices and Circuit Theory by Robert Boylestad and Louis Nashelsky.
-2. Electronic Devices and Circuits by David A Bell
+1. Boylestad, Robert L., and Louis Nashelsky. Electronic devices and circuit theory.
+   Prentice Hall, 2012.
+2. Bell, David A. &quot;Electronic devices and circuits.&quot; Reston: Reston Publ. Comp (1980).
