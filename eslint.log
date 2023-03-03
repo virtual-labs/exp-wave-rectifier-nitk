@@ -1,0 +1,48 @@
+
+/home/runner/work/exp-wave-rectifier-nitk/exp-wave-rectifier-nitk/experiment/simulation/js/main.js
+   41:21  warning  'ChemDoodle' is not defined                         no-undef
+   45:25  warning  'ChemDoodle' is not defined                         no-undef
+   48:23  warning  'ChemDoodle' is not defined                         no-undef
+   68:14  warning  'Chart' is not defined                              no-undef
+  135:7   warning  'stopAnimation' is assigned a value but never used  no-unused-vars
+  143:10  warning  Unexpected constant condition                       no-constant-condition
+
+/home/runner/work/exp-wave-rectifier-nitk/exp-wave-rectifier-nitk/experiment/simulation/js/script.js
+    4:5   warning  'res' is assigned a value but never used        no-unused-vars
+    5:5   warning  'N' is defined but never used                   no-unused-vars
+    6:5   warning  'pcheck' is assigned a value but never used     no-unused-vars
+    8:5   warning  'y1' is assigned a value but never used         no-unused-vars
+    9:5   warning  'y2' is assigned a value but never used         no-unused-vars
+   10:5   warning  'y3' is assigned a value but never used         no-unused-vars
+   16:5   warning  'cancel' is defined but never used              no-unused-vars
+   18:5   warning  'stopPlot' is defined but never used            no-unused-vars
+   22:10  warning  'up' is defined but never used                  no-unused-vars
+   27:10  warning  'down' is defined but never used                no-unused-vars
+   55:10  warning  'update' is defined but never used              no-unused-vars
+   70:10  warning  'connect' is defined but never used             no-unused-vars
+   84:10  warning  'changetransformer' is defined but never used   no-unused-vars
+  119:10  warning  'closeinstruction' is defined but never used    no-unused-vars
+  124:10  warning  'closeinput' is defined but never used          no-unused-vars
+  130:10  warning  'closeoutputhalf' is defined but never used     no-unused-vars
+  136:10  warning  'closeoutputfull' is defined but never used     no-unused-vars
+  176:10  warning  'setSlider' is defined but never used           no-unused-vars
+  199:10  warning  'help' is defined but never used                no-unused-vars
+  204:10  warning  'calculations' is defined but never used        no-unused-vars
+  260:23  warning  'axes' is defined but never used                no-unused-vars
+  289:9   warning  'frequency' is assigned a value but never used  no-unused-vars
+  323:9   warning  'frequency' is assigned a value but never used  no-unused-vars
+  366:10  warning  'closeanim' is defined but never used           no-unused-vars
+  479:6   warning  'ctx1' is defined but never used                no-unused-vars
+  483:10  warning  'getinputwaveform' is defined but never used    no-unused-vars
+  494:10  warning  'getoutputwaveform' is defined but never used   no-unused-vars
+  517:10  warning  'Refresh' is defined but never used             no-unused-vars
+  519:2   warning  Unnecessary semicolon                           no-extra-semi
+  521:10  warning  'closefulli' is defined but never used          no-unused-vars
+  527:10  warning  'closehalfi' is defined but never used          no-unused-vars
+
+/home/runner/work/exp-wave-rectifier-nitk/exp-wave-rectifier-nitk/experiment/simulation/js/sinewaves.js
+  41:10  error  Parsing error: Identifier 'plotSine2' has already been declared
+
+✖ 38 problems (1 error, 37 warnings)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+
