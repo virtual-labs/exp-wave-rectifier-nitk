@@ -1,209 +1,219 @@
-<!-- Home page of simulator -->
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <title>Solve</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/query.css" />
     <title>Virtual Lab</title>
-</head>
-
-<body>
-    <!-- simulation -->
-    <div class="simulation" id="simulation">
-        <div class="topic">
-            <h2>Half wave/Full wave Rectifier</h2>
+   
+  </head>
+  <body>
+    <div class="title-div-container">
+      <div class="title-div">
+          <div class="logo-div">
+            <a href="#"><img src="images/logo_nitk.png" alt="Logo" class="logo" /></a>
+          </div>
+          <h1>Half wave/Full wave Rectifier
+          </h1>
         </div>
-        <div id="content">
-            <div class="subtopics">
-                <h4>Objective:</h4>
-                <ol>
-                    <li>&ensp;To differentiate between input and output waveforms in Half wave/full wave rectifier</li>
-                    <li>&ensp;To calculate the Ripple Factor
-                    </li>
-                </ol>
-                <h4>Apparatus Used:</h4>
-                <p>Diodes, Step down Transformer, Resistor, DSO</p>
-            </div>
-            <div class="grid-container">
-                <div class="grid-item">
-                    <p>DSO</p><img class='img1' src="images/DSO.png" alt="DSO">
-                </div>
-                <div class="grid-item">
-                    <p>Diode</p><img class='img2' src="images/Diode.png" alt="diode">
-                </div>
-                <div class="grid-item">
-                    <p>Resistor</p><img class='img3' src="images/Resistor.png" alt="resistor" style="max-width:100px;" >
-                </div>
-                <div class="grid-item">
-                    <p>Transformer</p><img class='img4' src="images/transformer2.png" alt="transformer">
-                </div>
-            </div>
-        </div>
-
- <!-- content2 -->
- <div style="display: none;" id="content2">
-    <!-- <div class="blocker" onclick="closeobservation()" id="blocker"></div> -->
-
-    <div class="simoptions" id="simoptions">
-        <div class="procedure">
-            <label style="text-align:left;">Choose the Rectifier :</label><br>
-            <select name="exp" id="exp" onChange="update()">
-                <option value="Empty" hidden>Select the Rectifier</option>
-                <option value="Halfwaverectifier" >Half wave Rectifier</option>
-                <option value="Fullwaverectifier">Full wave Rectifier</option>
-            </select>
-        </div>
-        <div class="Result">
-            <button id="connectbutton" type="button" onclick="connect()" disabled>Connect to DSO</button>
-        </div>
-
-       
-        <div class="transformerdiv" >
-            <br><label style="text-align:left;">Select Transformer:</label><br>
-            <select name="transformer" id="transformers" onChange="changetransformer()" >
-                <option value="Empty" hidden>Select transformer</option>
-                <option value="Stepdowntransformer">Step down Transformer</option>
-                <option value="Stepuptransformer">Step up transformer</option>
-               
-            </select>
-
-        </div>
-        <div class="SLIDERS">
-            <p id="n1Turn">N1:<span id="slidervalue"></span>primary turns</p>
-            <input id="n1Slider" type="range" min="200" max="1000" value="200" step="100" class="slider"  disabled onchange="setSlider(this)">
-        </div>
-        <div class="SLIDERS">
-            <p id="n2Turn">N2:<span id="slidervalue"></span>secondary turns</p>
-            <input type="range" min="50" max="500" value="50" step="50" class="slider" id="n2Slider" disabled onchange="setSlider(this)">
-        </div>
-        <div class="SLIDERS">
-            <p id="resistor">Resistor: <span id="slidervalue"></span> &#8486;</p>
-            <input type="range" min="100" max="1000" value="100" step="100" class="slider" id="resistorSlider" disabled onchange="setSlider(this)">
-        </div>
-        <div class="SLIDERS">
-            <p>Frequency: 50Hz</p>
-        </div>
-        
-        <div class="Result">
-            <button id="addbutton" type="button" onclick="getinputwaveform()" disabled>Get Input Waveform</button>
-
-        </div>
-        <br>
-        <div class="Result">
-            <button id="addbutton1" type="button" onclick="getoutputwaveform()" disabled>Get Output Waveform</button>
-        </div><br>
-        <div class="Result">
-            <button id="addbutton2" type="button"enabled onclick="calculations()" disabled>Show Result</button>
-        </div><br>
-        
-        <div class="Result">
-            <button id="addbutton" type="reset" enabled
-            onclick="Refresh()">Reset</button>
-        </div><br>
-        <div class="help">
-            <button type="button" onclick="help()"><img src="images/help.png" alt="helpicon"></button>
-        </div>
-    </div>
-    
-    <!-- simulation -->
-    <div class="mainsimulation" id="mainsimulation">
-        <img id="Halfwave" src="images/Halfwave.jpg" alt="Halfwave rectifier" style="display:none;">
-        <img id="Fullwave" src="images/Fullwave.jpg" alt="Fullwave rectifier" style="display:none ;"> 
-        <img id="halfwithdso" src="images/halfwithdso2.png" alt="Halfwave rectifier with dso" style="display:none;">
-        <img id="fullwithdso" src="images/fullwithdso2.png" alt="Fullwave rectifier with dso" style="display:none;">
-    </div>
-    <div id="instructions">
-        <div class="icontent">
-            <h4>Instructions</h4>
-            <ol>
-                <li>Select half or full wave rectifier and type of transformer from the menu.
-                </li>
-                <li>Set the primary turns,secondary turns and resistance value and press the <b>"Connect DSO" </b> button to connect the channels of dso to the rectifier circuit.
-                </li>
-                <li>Click the <b>"Get input waveform"</b> button and analyse the input waveform with and without the diode.
-                </li>
-                <li>Click the <b>"Get output waveform"</b> button and analyse the rectified output waveform.
-                </li>
-                <li>Click on <b>"Show Result"</b> button to check the calculations.
-                </li>
-                <li>Calculate the value of V<sub>m</sub> ,V <sub>rms</sub>, V <sub>dc</sub> and ripple factor, γ=sqrt((Vrms/Vdc)^2-1).
-                </li>
-                <li>Click on the <b>"Reset" </b>button to restart the experiment.</li>
-            </ol>
-        </div>
-        <button type="button" onclick="closeinstruction()">Close</button>
-    </div>
-    <div id="calculate">
-        <div class="icalculate">
-            <h4>CALCULATIONS:      Full Wave Rectifier</h4>
-            <ul>
-                <li>From N <sub>1</sub> * V <sub>2</sub> = N <sub>2</sub> * V <sub>1</sub>   
-                </li>
-                <li>N <sub>1</sub>= Number of turns in Primary transformer , N <sub>2</sub>= Number of turns in Secondary transformer
-                </li>
-                <li>V <sub>1</sub>= Primary Voltage , V <sub>2</sub> = Secondary Voltage
-                </li>
-                <li >Here, V <sub>2</sub> = V <sub>m</sub>,V <sub>rms</sub>= V <sub>m</sub>/ √2</li><li id="v2Ans">  </li>
-                <li id="vrmsAns"> </li>
-                <li>V <sub>dc</sub>= (2 * V <sub>m</sub>)/ &pi;</li>
-                <li id="vdcAns"></li>
-                <li>Ripple factor of Full wave Rectifier is, &gamma; = √(V <sub>rms</sub>/ V <sub>dc</sub>) <sup>2</sup> - 1 </li>
-                <!-- <li>&gamma; = √(&pi; / 2√2) <sup>2</sup> - 1 </li> -->
-                <li>Theoretical Value of Ripple Factor &asymp;0.48</li>
-                <li>Experimental Value of Ripple factor ,</li>
-                <li id="rfAns"></li>
-                
-            </ul>
-        </div>
-        <button type="button" onclick="closefulli()">Close</button>
-    </div>
-    <div id="calculate1">
-        <div class="icalculate1">
-            <h4>CALCULATIONS:    Half Wave Rectifier</h4>
-            <ul>
-                <li> From N <sub>1</sub> * V <sub>2</sub> = N <sub>2</sub> * V <sub>1</sub>   
-                </li>
-                <li>N <sub>1</sub>= Number of turns in Primary transformer , N <sub>2</sub>= Number of turns in Secondary transformer
-                </li> 
-                <li> V <sub>1</sub>= Primary Voltage , V <sub>2</sub> = Secondary Voltage</li>
-                <li id="v2Ans1">  </li>
-                
-                <li>Here, V <sub>2</sub>= V <sub>m</sub>,V <sub>rms</sub>= V<sub>m</sub>/2</li>
-                <li id="vrmsAns1"></li>
-                <li>V <sub>dc</sub>=V<sub>m</sub>/&pi;</li>
-                <li id="vdcAns1"></li>
-                <li>Ripple factor of Half wave Rectifier is ,&gamma; = √(V<sub>rms</sub>/V<sub>dc</sub>)<sup>2</sup>-1</li>
-                <li>Theoretical Value of Ripple Factor &asymp;1.21</li>
-            <li>Experimental Value of Ripple factor,</li>
-            <li id="rfAns1"></li>
+      </div>
+    <div class="container">
+      <div class="sidebar">
+        <ul class="tool-menu">
+          <li class="tool-list tool-objective" onclick="displayDiv(this)">
+            <a class="tool-link" title="Objective"
+              >
+              <img src="./images/objective.png" alt="Objective" class="icons">
+            </a>
+            <span>Objective</span>
+          </li>
+          <li class="tool-list tool-apparatus" onclick="displayDiv(this)">
+            <a class="tool-link" title="Apparatus"
+              ><img src="./images/apparatus.png" alt="Objective" class="icons"></a
+              >
+              <span>Apparatus</span>
+          </li>
+          
+          <li class="tool-list tool-practice" onclick="displayDiv(this)">
+            <a class="tool-link" title="Experiment"
+              ><img src="./images/solution.png" alt="solution" class="icons"
+              ></a
+              >
+              <span>Experiment</span>
+          </li>
+          <li class="tool-list tool-help" onclick="displayDiv(this)" >
+            <a class="tool-link" title="Help" onclick="help()"
+              ><img src="./images/help1.png" alt="Help" class="icons"
+              ></a
+              >
+              <span>Help</span>
+          </li>
+          <li class="tool-list">
+            <a href="#" class="tool-link" id="refreshLink" title="Refresh">
+              <img id="reset" type="reset" onclick="Refresh()" src="images/bluecwdull.svg" alt="Refresh Button" class="reset">
+            </a>
+            <span class="refresh">Refresh</span>
+          </li>
         </ul>
-        </div>
-        <button id="atm" type="button" onclick="closehalfi()">Close</button>
-    </div>
-    
-    <div id="inputgraph" style="visibility: hidden;">
-        <div class="inputgraph1">
-            <h4>INPUT WAVEFORM:  Without / With Diode</h4>
-            <h5>Voltage(in volts) vs w( in rad/s)<br>
-                Vo = Vm sinwt</h5> 
-                <img id="halfdso" src="images/DSO.png" alt="dso" style="display:block;">
-                <div style="display:none;" id="inputw">
-                    <canvas id="canvas" width="500" height="500"
-                    style="width:345px ;height: 100px;top:100px;"></canvas>
-                    <canvas id="canvast" width="500" height="500"
-                    style="width:345px ;height: 100px;margin-top:-10px;"></canvas>
-                    <!-- <button id="closean" type="button" onclick="closeanim()">Close Animation</button> -->
-            </div>  
-              
+        
+      </div> 
+      <div class="main">
+        <div class="main-section">
+          <div id="simulation" class="main__task-div">
+            <h3 class="task-title">Objective</h3>
+           
+            <div class="canvas__div">
+              <div class="task-screen objective">
+                  <ol class="objective__main">
+                    <ol>
+                      <li>&ensp;To differentiate between input and output waveforms in Half wave/full wave rectifier</li>
+                      <li>&ensp;To calculate the Ripple Factor
+                      </li>
+                  </ol>
+                  </li>
+              </ol>
+              </div>
+              <div class="task-screen apparatus hide">
+                <!-- <h3 class="apparatus__title">Apparatus</h3> -->
+                <p>Diodes, Step down Transformer, Resistor, DSO</p>
+                <div class="apparatus-screen">
+                  <div class="apparatus-tool">
+                    <img src="images/DSO.png" class='img1' alt="DSO" class="tool-img diode">
+                    <span>DSO</span>
+                  </div>
+                  <div class="apparatus-tool">
+                    <img src="images/Diode.png" class='img2' alt="diode"class="tool-img capacitor">
+                    <span>Diode</span>
+                  </div>
+                  <div class="apparatus-tool">
+                   <img src="images/Resistor.png" class='img3' alt="resistor" class="tool-img resistor">
+                    <span>Resistor</span>
+                  </div>
+                  <div class="apparatus-tool">
+                    <img src="images/transformer2.png" class='img4' alt="transformer" class="tool-img opamp">
+                    <span>Transformer</span>
+              </div>
+               </div>
+               </div>
+           
+              <div class="task-screen practice hide">
+                <div class="procedure">
+                    <label style="text-align:left;">Choose the Rectifier :</label><br>
+            
+                    <!-- Radio buttons with inline styling -->
+                    <div class="radio-container">
+                        <input type="radio" id="Halfwaverectifier" name="exp" value="Halfwaverectifier" onChange="update()">
+                        <label for="Halfwaverectifier">Half Wave Rectifier</label>
+                    </div>
+            
+                    <div class="radio-container">
+                        <input type="radio" id="Fullwaverectifier" name="exp" value="Fullwaverectifier" onChange="update()">
+                        <label for="Fullwaverectifier">Full Wave Rectifier</label>
+                    </div>
+                </div>
+            
+                <div class="mainsimulation" id="mainsimulation">
+                    <img id="Halfwave" src="images/Halfwave.jpg" alt="Halfwave rectifier" style="display:none;">
+                    <img id="Fullwave" src="images/Fullwave.jpg" alt="Fullwave rectifier" style="display:none;">
+                    <img id="halfwithdso" src="images/halfwithdso2.png" alt="Halfwave rectifier with dso" style="display:none;">
+                    <img id="fullwithdso" src="images/fullwithdso2.png" alt="Fullwave rectifier with dso" style="display:none;">
+                </div>
+                
             </div>
-            <button id="atm1" type="button" onclick="closeinput()">Close</button>
+        
+            <div id="instructions" style="display: none;">
+              <div class="icontent">
+                <h4>Instructions</h4>
+                <ol>
+                    <li>Select half or full wave rectifier and type of transformer from the menu.
+                    </li>
+                    <li>Set the primary turns,secondary turns and resistance value and press the <b>"Connect DSO" </b> button to connect the channels of dso to the rectifier circuit.
+                    </li>
+                    <li>Click the <b>"Get input waveform"</b> button and analyse the input waveform with and without the diode.
+                    </li>
+                    <li>Click the <b>"Get output waveform"</b> button and analyse the rectified output waveform.
+                    </li>
+                    <li>Click on <b>"Show Result"</b> button to check the calculations.
+                    </li>
+                    <li>Calculate the value of V<sub>m</sub> ,V <sub>rms</sub>, V <sub>dc</sub> and ripple factor, γ=sqrt((Vrms/Vdc)^2-1).
+                    </li>
+                    <li>Click on the <b>"Reset" </b>button to restart the experiment.</li>
+                    <br>
+                </ol>
+            </div>
+     
+          </div>
+          <div id="calculate">
+            <div class="icalculate">
+                <h4>CALCULATIONS:      Full Wave Rectifier</h4>
+                <ul>
+                    <li>From N <sub>1</sub> * V <sub>2</sub> = N <sub>2</sub> * V <sub>1</sub>   
+                    </li>
+                    <li>N <sub>1</sub>= Number of turns in Primary transformer , N <sub>2</sub>= Number of turns in Secondary transformer
+                    </li>
+                    <li>V <sub>1</sub>= Primary Voltage , V <sub>2</sub> = Secondary Voltage
+                    </li>
+                    <li >Here, V <sub>2</sub> = V <sub>m</sub>,V <sub>rms</sub>= V <sub>m</sub>/ √2</li><li id="v2Ans">  </li>
+                    <li id="vrmsAns"> </li>
+                    <li>V <sub>dc</sub>= (2 * V <sub>m</sub>)/ &pi;</li>
+                    <li id="vdcAns"></li>
+                    <li>Ripple factor of Full wave Rectifier is, &gamma; = √(V <sub>rms</sub>/ V <sub>dc</sub>) <sup>2</sup> - 1 </li>
+                    <!-- <li>&gamma; = √(&pi; / 2√2) <sup>2</sup> - 1 </li> -->
+                    <li>Theoretical Value of Ripple Factor &asymp;0.48</li>
+                    <li>Experimental Value of Ripple factor ,</li>
+                    <li id="rfAns"></li>
+                    
+                </ul>
+            </div>
+            <button class="close" type="button" onclick="closefulli()">Close</button>
         </div>
-        <div id="outputgraphhalf">
+        <div id="calculate1">
+            <div class="icalculate1">
+                <h4>CALCULATIONS:    Half Wave Rectifier</h4>
+                <ul>
+                    <li> From N <sub>1</sub> * V <sub>2</sub> = N <sub>2</sub> * V <sub>1</sub>   
+                    </li>
+                    <li>N <sub>1</sub>= Number of turns in Primary transformer , N <sub>2</sub>= Number of turns in Secondary transformer
+                    </li> 
+                    <li> V <sub>1</sub>= Primary Voltage , V <sub>2</sub> = Secondary Voltage</li>
+                    <li id="v2Ans1">  </li>
+                    
+                    <li>Here, V <sub>2</sub>= V <sub>m</sub>,V <sub>rms</sub>= V<sub>m</sub>/2</li>
+                    <li id="vrmsAns1"></li>
+                    <li>V <sub>dc</sub>=V<sub>m</sub>/&pi;</li>
+                    <li id="vdcAns1"></li>
+                    <li>Ripple factor of Half wave Rectifier is ,&gamma; = √(V<sub>rms</sub>/V<sub>dc</sub>)<sup>2</sup>-1</li>
+                    <li>Theoretical Value of Ripple Factor &asymp;1.21</li>
+                <li>Experimental Value of Ripple factor,</li>
+                <li id="rfAns1"></li>
+            </ul>
+            </div>
+            <button id="atm" type="button" onclick="closehalfi()">Close</button>
+        </div>
+        
+        <div id="inputgraph" style="visibility: hidden;">
+          <div class="inputgraph1">
+              <h4>INPUT WAVEFORM:  Without / With Diode</h4>
+              <h5>Voltage(in volts) vs w( in rad/s)<br>
+                  Vo = Vm sinwt</h5> 
+                  <img id="halfdso" src="images/DSO.png" alt="dso" style="display:block;">
+                  <div style="display:none;" id="inputw">
+                      <canvas id="canvas" width="500" height="500"
+                      style="width:345px ;height: 100px;top:100px;"></canvas>
+                      <canvas id="canvast" width="500" height="500"
+                      style="width:345px ;height: 100px;margin-top:-10px;"></canvas>
+                      <!-- <button id="closean" type="button" onclick="closeanim()">Close Animation</button> -->
+              </div>  
+              <button id="atm1" class="atm1" type="button" onclick ="closeinput()">Close</button>
+              <!-- <button id="close1" onclick="closeinput()"><span>&times;</span></button> -->
+              </div>
+             
+          </div>
+          <div id="outputgraphhalf">
             <div class="outputgraph1half">
                 <h4>OUTPUT GRAPH:  Half Wave Rectifier </h4>
                 <img id="halfdso1" src="images/DSO.png" alt="dso" style="display:block;">   
@@ -212,27 +222,86 @@
                     style="width: 315px;height: 196px; margin-left:12px;top:100px;"></canvas>
                 </div>
             </div>
-        <button id="atm2" type="button" onclick="closeoutputhalf()">Close</button>
+        <button id="atm2" class="atm2" type="button" onclick="closeoutputhalf()">Close</button>
     </div>
     <div id="outputgraphfull">
-        <div class="outputgraph1full">
-            <h4>OUTPUT GRAPH: Full Wave Rectifier</h4>
-            <img id="halfdso1" src="images/DSO.png" alt="dso" style="display:block;">  
-            <div style="display:none;" id="outputf">
-                <canvas id="canvas4" width="500" height="500"
-                style="width:315px ;height: 196px; margin-left:12px;top:100px;"></canvas> 
-            </div>
+      <div class="outputgraph1full">
+          <h4>OUTPUT GRAPH: Full Wave Rectifier</h4>
+          <img id="halfdso1" src="images/DSO.png" alt="dso" style="display:block;">  
+          <div style="display:none;" id="outputf">
+              <canvas id="canvas4" width="500" height="500"
+              style="width:315px ;height: 196px; margin-left:12px;top:100px;"></canvas> 
+          </div>
+      </div>
+      <button id="atm3" class="atm3" type="button" onclick="closeoutputfull()">Close</button>
+  </div>
         </div>
-        <button id="atm3" type="button" onclick="closeoutputfull()">Close</button>
-    </div>
-    </div>
-        <!-- content3 -->
-        <button id="buttonup" onclick="up()"><img class="nextimg" src="images/arrow.png" alt="arrow"></button>
-        <button id="buttondown" onclick="down()"><img class="nextimg" src="images/arrow.png" alt="arrow"></button>
-    </div>
-    <script src="js/data.js"></script>
-    <script src="js/script.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-</body>
-
+         
+          </div>
+          
+          <div id="variables" class="main__task-div" style="display: none;">
+            <div class="settings-sections">
+              <h3 class="task-title">Controls</h3>
+          
+              <!-- Center container for Connect button, Transformer dropdown, and Sliders -->
+              <div class="center-container">
+                <!-- Connect to DSO Button -->
+                <div class="Result">
+                  <button id="connectbutton" type="button" onclick="connect()" disabled>Connect to DSO</button>
+                </div><br>
+          
+                <!-- Select Transformer Dropdown -->
+                <div class="transformerdiv">
+                  <label for="transformers">Select Transformer:</label>
+                  <select name="transformer" id="transformers" onChange="changetransformer()" disabled>
+                      <option value="Empty" hidden>Select transformer</option>
+                      <option value="Stepdowntransformer">Step down Transformer</option>
+                      <option value="Stepuptransformer">Step up transformer</option>
+                  </select>
+              </div>
+              
+          
+                <!-- Sliders -->
+                <div class="SLIDERS">
+                  <p id="n1Turn">N1: <span id="slidervalue"></span> primary turns</p>
+                  <input id="n1Slider" type="range" min="200" max="1000" value="200" step="100" class="slider" disabled onchange="setSlider(this)">
+                </div>
+          
+                <div class="SLIDERS">
+                  <p id="n2Turn">N2: <span id="slidervalue"></span> secondary turns</p>
+                  <input type="range" min="50" max="500" value="50" step="50" class="slider" id="n2Slider" disabled onchange="setSlider(this)">
+                </div>
+          
+                <div class="SLIDERS">
+                  <p id="resistor">Resistor: <span id="slidervalue"></span> &#8486;</p>
+                  <input type="range" min="100" max="1000" value="100" step="100" class="slider" id="resistorSlider" disabled onchange="setSlider(this)">
+                </div>
+          
+                <div class="SLIDERS">
+                  <p>Frequency: 50Hz</p>
+                </div>
+              </div>
+          
+              <!-- Buttons arranged in a triangle shape using Grid -->
+              <div class="button-grid">
+                <button id="addbutton" class="addbutton" type="button" onclick="getinputwaveform()" disabled>Get Input Waveform</button>
+                <button id="addbutton1" class="addbutton" type="button" onclick="getoutputwaveform()" disabled>Get Output Waveform</button>
+                <button id="addbutton2" class="addbutton" type="button" onclick="calculations()" disabled>Show Result</button>
+              </div>
+            </div>
+          </div>
+          
+          
+       
+          </div>
+         
+          <div class="main__task-div footer">
+            <p>Copyright © SOLVE The Virtual Lab @ NITK Surathkal</p>
+          </div>
+        </div></div>
+     
+    </div>  </div>
+    
+    <script defer src="js/script.js"></script>
+  </body>
 </html>
