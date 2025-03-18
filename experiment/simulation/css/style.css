@@ -290,7 +290,6 @@ h1 {
   width: 100%; /* Ensures the container takes the full width */
   flex-direction: column; /* Makes sure images stack on top of each other */
   position: relative;
-  
 }
 
 .img1 {
@@ -315,7 +314,7 @@ h1 {
 }
 .reset {
   height: 39px;
-  }
+}
 
 .simoptions {
   position: relative;
@@ -565,12 +564,9 @@ h1 {
   top: 110px;
   left: 45px;
   border: black solid;
-  border-width: 3px;
+  border-width: 0.1rem;
   z-index: 7;
 }
-
-
-
 
 .outputgraph1half {
   margin-left: 35px;
@@ -591,7 +587,7 @@ h1 {
   left: 50%;
   transform: translateX(-50%);
   padding: 20px;
-  border: 3px solid black;
+  border: 0.05rem solid black;
   z-index: 7;
 }
 
@@ -599,9 +595,8 @@ h1 {
   margin-left: 0; /* Adjust margin to make it more flexible */
   line-height: 2.4rem; /* Adjust the line height for smaller screens */
   margin-left: 0;
-    line-height: 2.2rem;
-    margin-top: -16px;
-
+  line-height: 2.2rem;
+  margin-top: -16px;
 }
 #calculate {
   display: none;
@@ -622,9 +617,8 @@ h1 {
   margin-left: 0; /* Adjust margin to make it more flexible */
   line-height: 2.4rem; /* Adjust the line height for smaller screens */
   margin-left: 0;
-    line-height: 2.2rem;
-    margin-top: -16px;
-
+  line-height: 2.2rem;
+  margin-top: -16px;
 }
 #atm {
   display: block;
@@ -637,7 +631,7 @@ h1 {
     var(--clr-side-background3)
   );
   color: var(--clr-text-clr);
- 
+
   border-radius: 30px; /* Rounded corners */
   cursor: pointer;
   text-align: center;
@@ -654,7 +648,7 @@ h1 {
     var(--clr-side-background3)
   );
   color: var(--clr-text-clr);
- 
+
   border-radius: 30px; /* Rounded corners */
   cursor: pointer;
   text-align: center;
@@ -744,16 +738,16 @@ margin: 0 auto; */
     padding-bottom: 4px;
     
   } */
-  #close1 {
-    position: absolute;
-    top: 10px; /* Adjust as per your layout */
-    right: 10px; /* Adjust as per your layout */
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: #333;
-    outline: none;
+#close1 {
+  position: absolute;
+  top: 10px; /* Adjust as per your layout */
+  right: 10px; /* Adjust as per your layout */
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  outline: none;
 }
 
 #atm1 {
@@ -782,24 +776,24 @@ margin: 0 auto; */
   cursor: pointer;
   margin-top: 21px;
 }
-  #atm2{
-    position: relative;
-    top: -187px;
-    right: -305px;
-    padding: 2px 9px;
-    border-radius: 30px;
-    background-color: #f0f0f0;
-    border: 2px solid #000;
-    cursor: pointer;
-    background-image: linear-gradient(
-      to bottom,
-      var(--clr-side-background2),
-      var(--clr-side-background3)
-    );
-    color: var(--clr-text-clr);
-  }
-  
-#atm3{
+#atm2 {
+  position: relative;
+  top: -187px;
+  right: -305px;
+  padding: 2px 9px;
+  border-radius: 30px;
+  background-color: #f0f0f0;
+  border: 2px solid #000;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to bottom,
+    var(--clr-side-background2),
+    var(--clr-side-background3)
+  );
+  color: var(--clr-text-clr);
+}
+
+#atm3 {
   position: relative;
   top: -195px;
   right: -305px;
@@ -814,19 +808,19 @@ margin: 0 auto; */
     var(--clr-side-background3)
   );
   color: var(--clr-text-clr);
-  }
-  #connectbutton{
-    position: absolute; 
-    /* width: 120px;
+}
+#connectbutton {
+  position: absolute;
+  /* width: 120px;
      height: 30px; */
-     border-radius: 30px;
-     cursor: pointer;
-     margin-left: -10px;
-     padding-left: 8px;
-     padding-top: 4px;
-     padding-right: 8px;
-     padding-bottom: 4px;
- }
+  border-radius: 30px;
+  cursor: pointer;
+  margin-left: -10px;
+  padding-left: 8px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-bottom: 4px;
+}
 .help,
 .practice {
   display: flex;
@@ -1024,22 +1018,21 @@ canvas {
   cursor: pointer;
 } */
 
-
 /* **********VARIABLES**************** */
 /* Center container for sliders and connect button */
 .center-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px; /* Adds space between sliders and buttons */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px; /* Adds space between sliders and buttons */
 }
 
 /* Sliders styling */
 .SLIDERS {
-    margin-top: 10px;
-    width: 300px; /* Adjust the width of the sliders */
-    text-align: center;
+  margin-top: 10px;
+  width: 300px; /* Adjust the width of the sliders */
+  text-align: center;
 }
 
 /* Button grid layout */
@@ -1080,8 +1073,6 @@ button:disabled {
   cursor: not-allowed;
   opacity: 0.5;
 }
-
-
 
 .buttons-column {
   display: flex;
@@ -1155,10 +1146,8 @@ button:disabled {
   display: none;
 }
 
-
 input[type="radio"] {
   cursor: pointer;
-  
 }
 
 .practice-step-button {
@@ -1371,6 +1360,13 @@ input[type="radio"] {
   }
 }
 
+.obs {
+  line-height: 1.7;
+}
+.result-bold {
+  font-weight: bolder;
+  color: rgb(4, 116, 99);
+}
 .observations {
   display: none;
   margin: 20px;
@@ -1451,9 +1447,6 @@ th {
   height: min-content;
   background-color: white;
 }
-
-
-
 
 .insert-reset-observation {
   display: flex;
@@ -1709,7 +1702,6 @@ th {
 
 /*------------------------------------------------------------------------------------------------------------*/
 
-
 .procedure {
   /* grid-column: 1/-1; */
   /* display: flex; */
@@ -1730,18 +1722,16 @@ th {
   /* text-align: center; */
 }
 
-
 .radio-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 .radio-container input[type="radio"] {
   margin-right: 20px; /* Adds more space between the radio button and the text */
 }
-
 
 .ok-button {
   padding: 10px 20px;
@@ -1841,6 +1831,3 @@ th {
     padding-bottom: 40px;
   }
 }
-
-
-

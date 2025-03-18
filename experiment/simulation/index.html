@@ -27,7 +27,7 @@
           <div class="logo-div">
             <a href="#"><img src="images/logo_nitk.png" alt="Logo" class="logo" /></a>
           </div>
-          <h1>Half wave/Full wave Rectifier
+          <h1>Half wave / Full wave Rectifier
           </h1>
         </div>
       </div>
@@ -160,22 +160,22 @@
           <div id="calculate">
             <div class="icalculate">
                 <h4>CALCULATIONS:      Full Wave Rectifier</h4>
-                <ul>
+                <ul class="obs">
                     <li>From N <sub>1</sub> * V <sub>2</sub> = N <sub>2</sub> * V <sub>1</sub>   
                     </li>
                     <li>N <sub>1</sub>= Number of turns in Primary transformer , N <sub>2</sub>= Number of turns in Secondary transformer
                     </li>
                     <li>V <sub>1</sub>= Primary Voltage , V <sub>2</sub> = Secondary Voltage
                     </li>
-                    <li >Here, V <sub>2</sub> = V <sub>m</sub>,V <sub>rms</sub>= V <sub>m</sub>/ √2</li><li id="v2Ans">  </li>
-                    <li id="vrmsAns"> </li>
+                    <li >Here, V <sub>2</sub> = V <sub>m</sub>,V <sub>rms</sub>= V <sub>m</sub>/ √2</li><li id="v2Ans" class="result-bold">  </li>
+                    <li id="vrmsAns" class="result-bold"> </li>
                     <li>V <sub>dc</sub>= (2 * V <sub>m</sub>)/ &pi;</li>
-                    <li id="vdcAns"></li>
+                    <li id="vdcAns" class="result-bold"></li>
                     <li>Ripple factor of Full wave Rectifier is, &gamma; = √(V <sub>rms</sub>/ V <sub>dc</sub>) <sup>2</sup> - 1 </li>
                     <!-- <li>&gamma; = √(&pi; / 2√2) <sup>2</sup> - 1 </li> -->
                     <li>Theoretical Value of Ripple Factor &asymp;0.48</li>
                     <li>Experimental Value of Ripple factor ,</li>
-                    <li id="rfAns"></li>
+                    <li id="rfAns" class="result-bold"></li>
                     
                 </ul>
             </div>
@@ -184,22 +184,22 @@
         <div id="calculate1">
             <div class="icalculate1">
                 <h4>CALCULATIONS:    Half Wave Rectifier</h4>
-                <ul>
+                <ul class="obs">
                     <li> From N <sub>1</sub> * V <sub>2</sub> = N <sub>2</sub> * V <sub>1</sub>   
                     </li>
                     <li>N <sub>1</sub>= Number of turns in Primary transformer , N <sub>2</sub>= Number of turns in Secondary transformer
                     </li> 
                     <li> V <sub>1</sub>= Primary Voltage , V <sub>2</sub> = Secondary Voltage</li>
-                    <li id="v2Ans1">  </li>
+                    <li id="v2Ans1" class="result-bold">  </li>
                     
                     <li>Here, V <sub>2</sub>= V <sub>m</sub>,V <sub>rms</sub>= V<sub>m</sub>/2</li>
-                    <li id="vrmsAns1"></li>
+                    <li id="vrmsAns1" class="result-bold"></li>
                     <li>V <sub>dc</sub>=V<sub>m</sub>/&pi;</li>
-                    <li id="vdcAns1"></li>
+                    <li id="vdcAns1" class="result-bold"></li>
                     <li>Ripple factor of Half wave Rectifier is ,&gamma; = √(V<sub>rms</sub>/V<sub>dc</sub>)<sup>2</sup>-1</li>
                     <li>Theoretical Value of Ripple Factor &asymp;1.21</li>
                 <li>Experimental Value of Ripple factor,</li>
-                <li id="rfAns1"></li>
+                <li id="rfAns1" class="result-bold"></li>
             </ul>
             </div>
             <button id="atm" type="button" onclick="closehalfi()">Close</button>
