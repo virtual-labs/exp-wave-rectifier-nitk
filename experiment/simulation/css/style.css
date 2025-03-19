@@ -591,6 +591,11 @@ h1 {
   z-index: 7;
 }
 
+.strong-text {
+  font-weight: 700;
+  color: var(--clr-title-background);
+}
+
 .icalculate1 {
   margin-left: 0; /* Adjust margin to make it more flexible */
   line-height: 2.4rem; /* Adjust the line height for smaller screens */
