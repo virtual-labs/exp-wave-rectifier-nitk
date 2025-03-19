@@ -2,38 +2,89 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is the use of rectifiers  in electrical circuits?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "To convert AC to DC",
+        "b": "Amplification",
+        "c": "Power modulation",
+        "d": "Positive feedback"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "For a stepdown transformer the number of turns in the primary and secondary is related by?",
+      "answers": {
+        "a": "N<sub>p</sub> = N<sub>s</sub>",
+        "b": "N<sub>p</sub> < N<sub>s</sub>",
+        "c": "N<sub>p</sub> > N<sub>s</sub>",
+        "d": "independent of the number of turns"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In an AC Circuit,  V<sub>rms</sub>  Stands for?",
+      "answers": {
+        "a": "Average voltage",
+        "b": "Standard deviation of the AC voltage",
+        "c": "Root mean square voltage",
+        "d": "Cross Correlation of voltage"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the ripple factor of half wave rectifier",
+      "answers": {
+        "a": "1.21",
+        "b": "1",
+        "c": "0.483",
+        "d": "0.9"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+     "question": "RMS value of the output voltage, V<sub>rms</sub>  of a Full-wave rectifier is",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "V<sub>m</sub>/2",
+        "b": "V<sub>m</sub>/π",
+        "c": "V<sub>m</sub>/√2",
+        "d": "V<sub>m</sub>/√2π"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "advanced"
     }
   ]
 }
