@@ -1,0 +1,1246 @@
+/* rem and em don not depend on html font size in media queries, Instead 1rem = 1em = 16px
+rem: root font size
+em:current font size
+*/
+
+/* *************only screen******* */
+
+/* **************************** */
+/* Below 1344px (Smaller Desktops) */
+/* **************************** */
+@media (min-width: 1400px) {
+  #outputgraphhalf {
+    transform: scale(0.8);
+    width: 106%;
+    margin-left: -31px;
+    margin-top: -20px;
+    height: 76%;
+  }
+  .outputgraph1half {
+    transform: scale(0.9);
+    margin-left: -14px;
+    line-height: 1.63rem;
+    margin-top: 15px;
+  
+  }
+}
+@media (min-width: 1200px) {
+  
+.objective {
+  padding: 15.6rem;
+}
+.canvas__div {
+  grid-template-columns: 1fr;
+}
+/* #variables {
+  width: 100%;
+} */
+#IBgraph{
+ transform: scale(0.75);
+        margin-left: -111px;
+        margin-top: -154px;
+        height: auto;
+        width: 121%;
+}
+#fieldvalue{
+  position: absolute;
+  left: 63%;
+  top: 73%;        
+  font-size: 10px;
+  /* font-size: 14px; */
+  /* z-index: 101; */
+}
+#cvalue{
+  position: absolute;
+        left: 18%;
+        top: 66%;
+        font-size: 12px;
+}
+#probe {
+  width: 2%;
+  height: 22%;
+  position: absolute;
+  top: 22%;
+  left: 50.5%!important;
+  /* left: 293px; */
+  overflow: hidden;
+  animation-duration: 3s;
+  transition: transform .3s;
+  display: none;
+}
+#wire {
+  width: 31%;
+  height: 44%;
+  position: absolute;
+  top: 33%;
+  left: 35% !important;
+
+    overflow: hidden;
+    animation-duration: 3s;
+    transition: transform .3s;
+  display: none;
+}
+.circuit {
+  width: 71%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-left: 78px; */
+}
+#zeeeman-box{
+  transform: scale(0.77);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -22%;
+  margin-top: -123px;
+
+}
+#circuit2 {
+
+  width: 73%;
+  position: relative;
+  left: 10.3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  }
+  .practice {
+    padding: 2.7rem;
+  }
+  .icalculate1 {
+    margin-left: 0 !important;
+    line-height: 2.2rem !important;
+    margin-top: 9px !important;
+  
+  }
+  #calculate1 {
+    display: none;
+    height: 92% !important;
+    width: 44vw;
+    max-width: 630px;
+    position: absolute;
+    background-color: white;
+    top: 37px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    border: 3px solid black;
+    z-index: 7;
+  }
+  .icalculate {
+    margin-left: 0 !important;
+    line-height: 2.2rem !important;
+    margin-top: 9px !important;
+  
+  }
+  #calculate {
+    display: none;
+    height: 88% !important;
+    width: 44vw;
+    max-width: 630px;
+    position: absolute;
+    background-color: white;
+    top: 37px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    border: 3px solid black;
+    z-index: 7;
+
+  }
+    #inputgraph {
+      transform: scale(0.78);
+      width: 113%;
+      margin-left: -99px;
+      margin-top: -78px;
+      height: 87%;
+  }
+  .inputgraph1 {
+    transform: scale(0.92);
+    margin-left: -12px;
+    line-height: 1.63rem;
+    margin-top: -11px;
+
+
+  }
+  #outputgraphhalf {
+    transform: scale(0.8);
+    width: 106%;
+    margin-left: -31px;
+    margin-top: -20px;
+    height: 85%;
+  }
+  .outputgraph1half {
+    transform: scale(0.9);
+    margin-left: -14px;
+    line-height: 1.63rem;
+    margin-top: 15px;
+  
+  }
+  #outputgraphfull {
+    transform: scale(0.8);
+    width: 106%;
+    margin-left: -31px;
+    margin-top: -20px;
+    height: 76%;
+  }
+  .outputgraph1full {
+    transform: scale(0.9);
+    margin-left: -14px;
+    line-height: 1.63rem;
+    margin-top: 15px;
+  
+  }
+}
+
+/* **************************** */
+/* Below 1200px (Lanscape Tablets) */
+/* **************************** */
+
+@media (max-width: 75em) {
+  body {
+    width: 100%;
+    margin: unset;
+  }
+  .title-div h1 {
+    font-size: 2.5rem;
+  }
+  .task-title {
+    font-size: 2rem;
+  }
+  .tool-menu {
+    font-size: 2rem;
+    gap: 2rem;
+  }
+  .icons {
+    width: 3rem;
+    height: 3rem;
+  }
+  .ctrl-icons {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .tool-list span {
+    font-size: 1.2rem;
+  }
+  .canvas {
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    /* background-color: red; */
+  }
+  .div__control img {
+    width: 3rem;
+    height: 2.8rem;
+  }
+  /* #variables {
+    width: 100%;
+  } */
+ 
+  .objective {
+    padding: 11.5rem;
+  }
+  .canvas__div {
+    grid-template-columns: 1fr;
+  }
+  #IBgraph{
+    transform: scale(0.95);
+    margin-left: 8px;
+    margin-top: -74px;
+    height: auto;
+    width: 86%;
+}
+  
+  .practice {
+    padding: 4.5rem;
+  }
+  .icalculate1 {
+    margin-left: 0 !important;
+    line-height: 2.2rem !important;
+    margin-top: 9px !important;
+  
+  }
+  #calculate1 {
+    display: none;
+    height: 89%!important;
+    width: 87vw;
+    max-width: 630px;
+    position: absolute;
+    background-color: white;
+    top: 54px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    border: 3px solid black;
+    z-index: 7;
+  }
+  .icalculate {
+    margin-left: 0 !important;
+    line-height: 2.2rem !important;
+    margin-top: 9px !important;
+  
+  }
+  #calculate {
+    display: none;
+    height: 84%!important;
+    width: 87vw;
+    max-width: 630px;
+    position: absolute;
+    background-color: white;
+    top: 54px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    border: 3px solid black;
+    z-index: 7;
+  }
+  #inputgraph {
+    transform: scale(0.8);
+    width: 113%;
+    margin-left: -7px;
+    margin-top: -61px;
+    height: 82%;
+  }
+  .inputgraph1 {
+    transform: scale(1);
+    margin-left: 19px;
+    line-height: 1.63rem;
+    margin-top: -11px;
+
+  }
+  #outputgraphhalf {
+    transform: scale(0.8);
+        width: 88%;
+        margin-left: 31px;
+        margin-top: -20px;
+        height: 76%;
+  }
+  .outputgraph1half {
+    transform: scale(0.89);
+    margin-left: 39px;
+    line-height: 1.63rem;
+    margin-top: -13px;
+  
+  }
+  #outputgraphfull {
+    transform: scale(0.8);
+        width: 88%;
+        margin-left: 31px;
+        margin-top: -20px;
+        height: 76%;
+  }
+  .outputgraph1full {
+    transform: scale(0.89);
+    margin-left: 39px;
+    line-height: 1.63rem;
+    margin-top: -13px;
+  
+  }
+}
+
+/* **************************** */
+/* Below 944px ( Tablets) */
+/* **************************** */
+
+@media (max-width: 59em) {
+  .tool-link:link,
+  .tool-link:visited {
+    gap: 0.5rem;
+    font-size: 1.4rem;
+    flex-direction: column;
+  }
+
+  .title-div h1 {
+    font-size: 2rem;
+  }
+  .sidebar {
+    position: fixed;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    flex-direction: row;
+    width: 100%;
+    backdrop-filter: blur(10rem);
+    z-index: 101;
+    justify-content: space-evenly;
+    border-radius: 0;
+    scroll-behavior: auto;
+  }
+  .tool-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+    font-size: 2.4rem;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+  
+  .canvas {
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    /* background-color: red; */
+  }
+  .main-section {
+    grid-template-columns: 1fr;
+  }
+  .canvas__div {
+    grid-template-columns: 1fr;
+  }
+  .canvas {
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    border: none;
+  }
+  .footer {
+    margin-bottom: 37px;
+  }
+  .objective {
+    padding: 13rem;
+  }
+  #IBgraph{
+    transform: scale(0.85);
+    margin-left: -39px;
+    margin-top: -124px;
+    height: auto;
+    width: 103%;
+
+    
+  }
+  #fieldvalue{
+    position: absolute;
+    left: 65%;
+    top: 72%;
+    font-size: 16px;
+    /* z-index: 101; */
+  }
+  #cvalue{
+    position: absolute;
+    left: 23%;
+    top: 67%;
+    font-size: 15px;
+  }
+  #probe {
+    width: 2%;
+    height: 22%;
+    position: absolute;
+    top: 22%;
+    left: 53.2%!important;
+    /* left: 293px; */
+    overflow: hidden;
+    animation-duration: 3s;
+    transition: transform .3s;
+    display: none;
+  }
+  #wire {
+    width: 31%;
+    height: 44%;
+    position: absolute;
+    top: 33%;
+    left: 37.7%!important;
+  
+      overflow: hidden;
+      animation-duration: 3s;
+      transition: transform .3s;
+    display: none;
+  }
+  .circuit {
+    width: 71%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 118px; */
+}
+#zeeeman-box{
+  transform: scale(0.74);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 11%;
+  margin-top: -78px;
+}
+#circuit2 {
+
+  width: 69%;
+  position: relative;
+  left: 15.4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  }
+  .practice {
+    padding: 4.5rem;
+  }
+  #inputgraph {
+    transform: scale(0.8);
+    width: 113%;
+    margin-left: -7px;
+    margin-top: -56px;
+    height: 82%;
+  }
+  .inputgraph1 {
+    transform: scale(1);
+    margin-left: 19px;
+    line-height: 1.63rem;
+    margin-top: -11px;
+
+  }
+  #outputgraphhalf {
+    transform: scale(0.8);
+        width: 88%;
+        margin-left: 31px;
+        margin-top: -20px;
+        height: 76%;
+  }
+  .outputgraph1half {
+    transform: scale(0.89);
+    margin-left: 39px;
+    line-height: 1.63rem;
+    margin-top: -13px;
+  
+  }
+  #outputgraphfull {
+    transform: scale(0.8);
+        width: 88%;
+        margin-left: 31px;
+        margin-top: -20px;
+        height: 76%;
+  }
+  .outputgraph1full {
+    transform: scale(0.89);
+    margin-left: 39px;
+    line-height: 1.63rem;
+    margin-top: -13px;
+  
+  }
+}
+
+/* **************************** */
+/* Below 820px (Smaller Tablets) */
+/* **************************** */
+@media (max-width: 48em) {
+  .main-section {
+    grid-template-columns: 1fr;
+  }
+  .canvas__div {
+    grid-template-columns: 1fr;
+  }
+  .canvas {
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    border: none;
+  }
+  .tool-list span {
+    font-size: 1.6rem;
+  }
+  .tool-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+    font-size: 2.4rem;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+  .footer {
+    margin-bottom: 47px;
+  }
+  .objective {
+    padding: 11rem;
+  }
+  #IBgraph{
+    transform: scale(0.65);
+    margin-left: -118px;
+    margin-top: -165px;
+    height: auto;
+    width: 125%;
+}
+  #fieldvalue{
+    position: absolute;
+    left: 65%;
+    top: 72%;
+    font-size: 14px;
+    /* z-index: 101; */
+  }
+  #cvalue{
+    position: absolute;
+    left: 24%;
+    top: 66%;
+    font-size: 15px;
+  }
+  #probe {
+    width: 2%;
+    height: 22%;
+    position: absolute;
+    top: 22%;
+    left: 53.4%!important;
+    /* left: 293px; */
+    overflow: hidden;
+    animation-duration: 3s;
+    transition: transform .3s;
+    display: none;
+  }
+  #wire {
+    width: 31%;
+    height: 44%;
+    position: absolute;
+    top: 33%;
+    left: 37.75%!important;
+  
+      overflow: hidden;
+      animation-duration: 3s;
+      transition: transform .3s;
+    display: none;
+  }
+  .circuit {
+    width: 71%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 101px; */
+}
+#zeeeman-box{
+  transform: scale(0.74);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 3%;
+        margin-top: -78px;
+
+}
+#circuit2 {
+
+  width: 69%;
+  position: relative;
+  left: 15.4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  }
+  .practice {
+    padding: 3.5rem;
+  }
+  #inputgraph {
+    transform: scale(0.8);
+    width: 113%;
+    margin-left: -37px;
+    margin-top: -74px;
+    height: 84%;
+  }
+  .inputgraph1 {
+    transform: scale(0.96);
+        margin-left: 17px;
+        line-height: 1.63rem;
+        margin-top: -13px;
+        width: 131%;
+  }
+  #outputgraphhalf {
+    transform: scale(0.8);
+    width: 102%;
+    margin-left: -34px;
+    margin-top: -20px;
+    height: 79%;
+  }
+  .outputgraph1half {
+    transform: scale(0.97);
+    margin-left: 39px;
+    line-height: 1.63rem;
+    margin-top: 3px;
+  
+  }
+  #outputgraphfull {
+    transform: scale(0.8);
+    width: 102%;
+    margin-left: -34px;
+    margin-top: -20px;
+    height: 79%;
+  }
+  .outputgraph1full {
+    transform: scale(0.97);
+    margin-left: 39px;
+    line-height: 1.63rem;
+    margin-top: 3px;
+  
+  }
+}
+
+/* **************************** */
+/* Below 704px (Smaller Tablets) */
+/* **************************** */
+@media (max-width: 44em) {
+  .canvas__div {
+    grid-template-columns: 1fr;
+  }
+  .img-div {
+    flex-direction: column;
+  }
+  .title-div {
+    gap: 0rem;
+    text-align: center;
+  }
+  .round {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+  .logo-div {
+    width: 6.5rem;
+  }
+  .main__task-div:nth-child(4) {
+    margin-bottom: 6rem;
+  }
+ 
+  .cross-img {
+    width: 60%;
+  }
+  .canvas {
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    border: none;
+  }
+  .footer {
+    margin-bottom: 45px;
+  }
+ 
+  .objective {
+    padding: 13rem;
+  }
+  /* #IBgraph{
+    
+    transform: scale(0.8);
+   
+  } */
+  #IBgraph{
+    transform: scale(0.65);
+    margin-left: -118px;
+    margin-top: -165px;
+    height: auto;
+    width: 133%;
+}
+  .observation{
+    transform: scale(1);
+  }
+  #fieldvalue{
+    position: absolute;
+    left: 66%;
+    top: 72%;
+    font-size: 13px;
+    /* z-index: 101; */
+  }  
+  #cvalue{
+    position: absolute;
+    left: 17%;
+    top: 66%;
+    font-size: 13px;
+  }
+  #probe {
+    width: 2%;
+    height: 22%;
+    position: absolute;
+    top: 22%;
+    left: 53.1%!important;
+    /* left: 293px; */
+    overflow: hidden;
+    animation-duration: 3s;
+    transition: transform .3s;
+    display: none;
+  }
+  #wire {
+    width: 31%;
+    height: 44%;
+    position: absolute;
+    top: 33%;
+    left: 37.7%!important;
+  
+      overflow: hidden;
+      animation-duration: 3s;
+      transition: transform .3s;
+    display: none;
+  }
+  .circuit {
+    width: 71%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 83px; */
+}
+#zeeeman-box{
+  transform: scale(0.74);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -9%;
+  margin-top: -78px;
+
+}
+#circuit2 {
+
+  width: 78%;
+  position: relative;
+  left: 10.3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  }
+  .practice {
+    padding: 3.8rem;
+  }
+  
+  #inputgraph {
+    transform: scale(0.8);
+    width: 113%;
+    margin-left: -66px;
+    margin-top: -28px;
+    height: 78%;
+  }
+  .inputgraph1 {
+    transform: scale(0.82);
+    margin-left: -51px;
+    line-height: 1.63rem;
+    margin-top: -27px;
+    width: 131%;
+  }
+  #outputgraphhalf {
+    transform: scale(0.8);
+    width: 102%;
+    margin-left: -34px;
+    margin-top: -17px;
+    height: 69%;
+  }
+  .outputgraph1half {
+    transform: scale(0.77);
+    margin-left: -43px;
+    line-height: 1.63rem;
+    margin-top: -47px;
+  
+  }
+  #outputgraphfull {
+    transform: scale(0.8);
+    width: 102%;
+    margin-left: -34px;
+    margin-top: -17px;
+    height: 62%;
+  }
+  .outputgraph1full {
+    transform: scale(0.77);
+    margin-left: -43px;
+    line-height: 1.63rem;
+    margin-top: -47px;
+  
+  }
+}
+
+/* **************************** */
+/* Below 540px (Smaller Tablets) */
+/* **************************** */
+@media (max-width: 34em) {
+  /* .container {
+    gap: 1rem;
+  } */
+
+  .title-div h1 {
+    /* padding: 0.2rem; */
+
+    font-size: 1.6rem;
+    /* text-align: center; */
+  }
+
+  .logo-div {
+    width: 4.5rem;
+  }
+  .div__control {
+    gap: 2rem;
+    /* top: 1.8rem;
+    right: 1.5rem; */
+  }
+  .ctrl-icons {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .tool-menu {
+    gap: 1.5rem;
+  }
+  .tool-list span {
+    font-size: 1.2rem;
+  }
+  .task-title {
+    font-size: 1.7rem;
+  }
+  canvas {
+    width: 100%;
+  }
+  label,
+  select,
+  input,
+  p {
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+  .main {
+    gap: 0.5rem;
+  }
+  .main-section {
+    gap: 0.5rem;
+  }
+  .sidebar {
+    border-radius: 0;
+  }
+  .canvas {
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    border: none;
+  }
+  .div__control img {
+    width: 2.7rem;
+    height: 2.5rem;
+  }
+  .tooltip {
+    font-size: 1rem;
+  }
+  .footer {
+    margin-bottom: 36px;
+  }
+ 
+  .objective {
+    padding: 13rem;
+  }
+  #IBgraph{
+    transform: scale(0.45);
+    margin-left: -223px;
+    margin-top: -200px;
+    height: auto;
+    width: 181%;
+}
+.tool-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  font-size: 2.4rem;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+  
+  .observation{
+    transform: scale(1);
+  }
+  #instruct{
+    font-size: 2rem;
+  }
+  #fieldvalue{
+    position: absolute;
+    left: 67%;
+    top: 73%;
+    font-size: 11px;
+    /* z-index: 101; */
+
+  }
+  #cvalue{
+    position: absolute;
+    left: 14%;
+    top: 66%;
+    font-size: 11px;
+  }
+  #probe {
+    width: 2%;
+    height: 22%;
+    position: absolute;
+    top: 22%;
+    left: 53.4%!important;
+    /* left: 293px; */
+    overflow: hidden;
+    animation-duration: 3s;
+    transition: transform .3s;
+    display: none;
+  }
+  #wire {
+    width: 31%;
+    height: 44%;
+    position: absolute;
+    top: 33%;
+    left: 37.7%!important;
+  
+      overflow: hidden;
+      animation-duration: 3s;
+      transition: transform .3s;
+    display: none;
+  }
+  .circuit {
+    width: 71%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 62px; */
+}
+#zeeeman-box{
+  transform: scale(0.59);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -50%;
+  margin-top: -78px;
+
+}
+#circuit2 {
+
+  width: 90%;
+  position: relative;
+  left: 3.7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  }
+  .practice {
+    padding: 5.5rem;
+  }
+  #Halfwave {
+    width: 325px !important;
+    margin-left: -60px;
+  }
+  #Fullwave {
+    width: 351px;
+    margin-left: -70px;
+    /* height: 400px; */
+    /* margin-top: 30px;
+    margin-left: 100px; */
+  }
+  #halfwithdso {
+    width: 325px !important;
+    margin-left: -58px;
+    height: 442px!important;
+  }
+  #fullwithdso {
+    width: 325px !important;
+    margin-left: -62px;
+    height: 442px!important;
+    /* margin-left:100px; */
+  }
+  
+ 
+  #inputgraph {
+    transform: scale(0.8);
+        width: 113%;
+        margin-left: -53px;
+        margin-top: 34px;
+        height: 55%;
+  }
+  .inputgraph1 {
+    transform: scale(0.62);
+    margin-left: -89px;
+    line-height: 1.63rem;
+    margin-top: -84px;
+  }
+  #outputgraphhalf {
+    transform: scale(0.8);
+    width: 102%;
+    margin-left: -34px;
+    margin-top: 34px;
+    height: 55%;
+
+  }
+  .outputgraph1half {
+    transform: scale(0.62);
+    margin-left: -89px;
+    line-height: 1.63rem;
+    margin-top: -84px;
+  }
+  #outputgraphfull {
+    transform: scale(0.8);
+    width: 102%;
+    margin-left: -34px;
+    margin-top: 34px;
+    height: 55%;
+
+  }
+  .outputgraph1full {
+    transform: scale(0.62);
+    margin-left: -89px;
+    line-height: 1.63rem;
+    margin-top: -84px;
+  }
+  .icalculate {
+    margin-left: 0 !important;
+    line-height: 2.2rem !important;
+    margin-top: 9px !important;
+  
+  }
+  #calculate {
+    display: none;
+    height: 92% !important;
+    width: 87vw;
+    max-width: 630px;
+    position: absolute;
+    background-color: white;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    border: 3px solid black;
+    z-index: 7;
+  }
+}
+
+
+@media (max-width: 27em) {
+  .sidebar {
+    position: fixed;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    flex-direction: row;
+    width: 100%;
+    backdrop-filter: blur(10rem);
+    z-index: 101;
+    justify-content: space-evenly;
+    border-radius: 0;
+    scroll-behavior: auto;
+  }
+  .tool-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+    font-size: 2.4rem;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+  .canvas__div {
+    grid-template-columns: 1fr;
+   
+  }
+  .objective {
+    padding: 10rem;
+  }
+  .apparatus-screen {
+    grid-template-columns: 1fr;
+  }
+  .practice {
+    padding: 7.5rem;
+  }
+  .quiz-div {
+    padding: 0.5rem;
+    width: 100%;
+  }
+  .answers {
+    grid-template-columns: 1fr;
+  }
+  .practice-step-no {
+    width: 3rem;
+    height: 3rem;
+  }
+  .btn-next,
+  .btn-reset,
+  .btn-top {
+    width: 3rem;
+    height: 3rem;
+  }
+  .footer {
+    margin-bottom: 36px;
+  }
+  .icalculate {
+    margin-left: 0 !important;
+    line-height: 2.2rem !important;
+    margin-top: 9px !important;
+  
+  }
+  #calculate {
+    display: none;
+    height: 90%!important;
+    width: 87vw;
+    max-width: 630px;
+    position: absolute;
+    background-color: white;
+    top: 54px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    border: 3px solid black;
+    z-index: 7;
+  }
+
+
+  .icalculate1 {
+    margin-left: 0!important;
+    line-height: 1.9rem!important;
+    margin-top: -16px!important;
+  
+  }
+  #calculate1 {
+    display: none;
+    height: 89%!important;
+    width: 87vw;
+    max-width: 630px;
+    position: absolute;
+    background-color: white;
+    top: 54px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    border: 3px solid black;
+    z-index: 7;
+  }
+  #inputgraph {
+    transform: scale(0.8);
+        width: 119%;
+        margin-left: -53px;
+        margin-top: 34px;
+        height: 46%;
+  }
+  .inputgraph1 {
+    transform: scale(0.52);
+    margin-left: -99px;
+    line-height: 1.63rem;
+    margin-top: -108px;
+  }
+  #outputgraphhalf {
+    transform: scale(0.8);
+        width: 112%;
+        margin-left: -46px;
+        margin-top: 34px;
+        height: 46%;
+  }
+  .outputgraph1half{
+    transform: scale(0.52);
+    margin-left: -99px;
+    line-height: 1.63rem;
+    margin-top: -108px;
+  }
+  #outputgraphfull {
+    transform: scale(0.8);
+        width: 112%;
+        margin-left: -46px;
+        margin-top: 34px;
+        height: 47%;
+  }
+  .outputgraph1full{
+    transform: scale(0.52);
+    margin-left: -99px;
+    line-height: 1.63rem;
+    margin-top: -108px;
+  }
+  
+}
+/* 
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+ */
